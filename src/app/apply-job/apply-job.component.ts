@@ -25,7 +25,7 @@ export class ApplyJobComponent {
       cc: this.cc
     };
 
-    this.http.post<any>('http://localhost:8080/api/send', payload)
+    this.http.post<any>('http://jobmailerbackend-production.up.railway.app/api/send', payload)
       .subscribe({
         next: (res) => {
           this.message = res.message;
