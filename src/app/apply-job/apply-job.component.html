@@ -1,0 +1,15 @@
+<div class="mail-form">
+  <h2>Send Job Application</h2>
+  
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="email" placeholder="Enter recipient email" />
+
+  <label>CC (Optional):</label>
+  <input type="email" [(ngModel)]="cc" placeholder="Enter CC email" />
+
+  <button (click)="sendEmail()" [disabled]="loading">
+    {{ loading ? 'Sending...' : 'Send Email' }}
+  </button>
+
+  <p *ngIf="message" class="response-msg">{{ message }}</p>
+</div>

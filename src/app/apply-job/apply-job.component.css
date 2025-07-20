@@ -1,0 +1,25 @@
+.mail-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 5px 0 15px;
+  padding: 8px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.response-msg {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
